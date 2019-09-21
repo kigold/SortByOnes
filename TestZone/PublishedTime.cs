@@ -10,6 +10,8 @@ namespace TestZone
     {
         public static string TimeDiff(DateTime date, DateTime current)
         {
+            int[] A = { 1, 2, 3, 4 };
+            var t = A.Count();
             var timeDiff = (current - date).TotalMinutes;
             timeDiff = 10081;
             if (timeDiff > 10080)
