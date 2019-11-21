@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
 
 namespace TestZone
 {
@@ -32,11 +33,32 @@ namespace TestZone
                 Console.WriteLine(i + " ");
             //HeapPermutation.Run("1234");*/
             //APIQuery.Run("1-January-2000", "22-February-2000", "Monday");
-            var res = PublishedTime.TimeDiff(DateTime.Parse("12/12/2018"), DateTime.Now);
-            Console.WriteLine(res);
+            //var res = PublishedTime.TimeDiff(DateTime.Parse("12/12/2018"), DateTime.Now);
+            /*var b = new[] { new { a = 1, b = " t1" }, new { a = 2, b = " t2" }, new { a = 1, b = " t1" } };
+            var l = b.ToList();
+            var u = l.Distinct();
+            var z = Convert.ToInt64("45");
+            Console.WriteLine(l.Count() +" -" + u.Count());*/
+            Console.WriteLine("Enter WOrd to be encoded");
+            var word = Console.ReadLine();
+            var coded = Encoding.Encrypt(word);
+            Console.WriteLine($"Encoded: {coded}");
+            Console.WriteLine($"Decoded: {Encoding.Decrypt(coded)}");
+            List<AppType> apps = new List<AppType>();
+            apps.Add(AppType.admin);
+            apps.Add(AppType.guest);
+            Console.WriteLine(apps);
+
             Console.ReadLine();
         }
 
         
+    }
+
+    public enum AppType
+    {
+        user,
+        admin,
+        guest
     }
 }
