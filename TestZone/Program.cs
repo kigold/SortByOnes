@@ -39,7 +39,7 @@ namespace TestZone
             var u = l.Distinct();
             var z = Convert.ToInt64("45");
             Console.WriteLine(l.Count() +" -" + u.Count());*/
-            Console.WriteLine("Enter WOrd to be encoded");
+            /*Console.WriteLine("Enter WOrd to be encoded");
             var word = Console.ReadLine();
             var coded = Encoding.Encrypt(word);
             Console.WriteLine($"Encoded: {coded}");
@@ -47,7 +47,8 @@ namespace TestZone
             List<AppType> apps = new List<AppType>();
             apps.Add(AppType.admin);
             apps.Add(AppType.guest);
-            Console.WriteLine(apps);
+            Console.WriteLine(apps);*/
+            BiggestTableSln.Start(new[] { "4", "5", "1,1,1,1,1,"});
 
             Console.ReadLine();
         }

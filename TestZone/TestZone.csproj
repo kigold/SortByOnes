@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIQuery.cs" />
+    <Compile Include="BiggestTableSln.cs" />
     <Compile Include="CardsWar.cs" />
     <Compile Include="ConsoleClient.cs" />
     <Compile Include="DivideAndSubtract.cs" />
