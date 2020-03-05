@@ -61,11 +61,17 @@
   <ItemGroup>
     <Compile Include="APIQuery.cs" />
     <Compile Include="BiggestTableSln.cs" />
+    <Compile Include="BirthdayCakeCandle.cs" />
+    <Compile Include="BudgetShoppingSln.cs" />
     <Compile Include="CardsWar.cs" />
+    <Compile Include="CompareTriplet.cs" />
     <Compile Include="ConsoleClient.cs" />
+    <Compile Include="DataStructures\BinaryHeap.cs" />
+    <Compile Include="DataStructures\LinkedListSoln.cs" />
     <Compile Include="DivideAndSubtract.cs" />
     <Compile Include="Encoding.cs" />
     <Compile Include="HeapPermutation.cs" />
+    <Compile Include="MinMaxSum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublishedTime.cs" />

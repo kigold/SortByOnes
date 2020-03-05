@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using TestZone.DataStructures;
 
 namespace TestZone
 {
@@ -48,8 +49,60 @@ namespace TestZone
             apps.Add(AppType.admin);
             apps.Add(AppType.guest);
             Console.WriteLine(apps);*/
-            BiggestTableSln.Start(new[] { "4", "5", "1,1,1,1,1,"});
+            //BiggestTableSln.Start(new[] { "4", "5", "1,1,1,1,1,"});
 
+            /*string[] words =
+            { "the", "fox", "jumps", "over", "the", "dog", "jumps" };
+            LinkedList<string> L = new LinkedList<string>(words);
+
+            var result = LinkedListSoln.FindLoop(L);/
+
+
+            /*
+            var Heap = new BinaryHeap();
+            string command = "";
+            while(command.ToLower() != "exit")
+            {
+                Console.WriteLine("Enter ur desired command such as INSERT, REMOVE, SORT, PRINT");
+                command = Console.ReadLine();
+                switch (command.ToLower())
+                {
+                    case "i":
+                        {
+                            Console.WriteLine("Enter item to insert");
+                            int.TryParse(Console.ReadLine(), out int item);
+                            Heap.Insert(item);
+                            break;
+                        }
+                    case "r":
+                        {
+                            Console.WriteLine("Enter item to remove");
+                            int.TryParse(Console.ReadLine(), out int item);
+                            Heap.Remove(item);
+                            break;
+                        }
+                    case "s":
+                        {
+                            Heap.Sort();
+                            Heap.PrintItems();
+                            break;
+                        }
+                    default:
+                        {
+                            Heap.PrintItems();
+                            break;
+                        }
+                }
+            }
+            */
+            //CompareTriplet.GetParams();
+            // MinMaxSum.Solve();
+            var users = new List<User>
+           {
+               new User("Kingsley", 31),
+               new User("Cele", 21)
+           };
+            users.ForEach((x) => { Console.WriteLine(x); });
             Console.ReadLine();
         }
 
