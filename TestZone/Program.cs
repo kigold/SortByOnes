@@ -97,12 +97,17 @@ namespace TestZone
             */
             //CompareTriplet.GetParams();
             // MinMaxSum.Solve();
-            var users = new List<User>
+            /*var users = new List<User>
            {
                new User("Kingsley", 31),
                new User("Cele", 21)
            };
-            users.ForEach((x) => { Console.WriteLine(x); });
+            users.ForEach((x) => { Console.WriteLine(x); });*/
+            /*string param = "3 4\n* 0 0 0\n0 * 0 *\n0 0 0 0";
+            MineSweeper.Solve(param);*/
+            //BirthdayCakeCandle.Solve();
+            var HC = new HackCity(0);
+            HC.Solve();
             Console.ReadLine();
         }
 

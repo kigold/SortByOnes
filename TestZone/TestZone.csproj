@@ -70,7 +70,9 @@
     <Compile Include="DataStructures\LinkedListSoln.cs" />
     <Compile Include="DivideAndSubtract.cs" />
     <Compile Include="Encoding.cs" />
+    <Compile Include="HackCity.cs" />
     <Compile Include="HeapPermutation.cs" />
+    <Compile Include="MineSweeper.cs" />
     <Compile Include="MinMaxSum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
